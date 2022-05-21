@@ -1,0 +1,20 @@
+.navButtons {
+    flex-grow: 1;
+    height: 60px;
+    @include flexCenter;
+    justify-content: space-evenly;
+    padding: 0.5rem 0.25rem;
+
+    .button {
+
+        &:hover {
+            color: rgb(134, 74, 255);
+            opacity: 0.8;        
+        }
+    
+        &:focus {
+            box-shadow: 4px 1px 15px $text-shadow-color;
+            color: rgb(134, 74, 255);
+        }
+    }
+}
